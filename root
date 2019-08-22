@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Este sencillo script te permitirá habilitar tu cuenta root"
 echo "Iniciando"
-sudo su
 echo '
 PermitRootLogin yes
 PubkeyAuthentication yes
@@ -11,3 +10,4 @@ service ssh restart
 echo "Ahora agregaremos un password a tu cuenta root"
 passwd root
 echo "Listo!!"
+rm root
